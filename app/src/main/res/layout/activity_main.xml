@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="this is logo"
+        android:src="@mipmap/logo_type" />
+
+    <Button
+        android:id="@+id/btn_search_mainAct"
+        style="@style/Button_Style_BG_Blue_Then_Whit"
+        android:layout_width="190dp"
+        android:layout_marginBottom="@dimen/margin_8_dp"
+        android:text="جستجو"
+        app:layout_constraintBottom_toTopOf="@id/btn_account_mainAct"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btn_account_mainAct"
+        android:layout_height="wrap_content"
+        android:layout_width="190dp"
+        style="@style/Button_Style_BG_Blue_Then_Whit"
+        android:layout_marginBottom="@dimen/margin_8_dp"
+        android:text="حساب کاربری"
+        app:layout_constraintBottom_toTopOf="@id/btn_setting_mainAct"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btn_setting_mainAct"
+        style="@style/Button_Style_BG_Blue_Then_Whit"
+        android:layout_width="190dp"
+        android:layout_marginBottom="@dimen/margin_8_dp"
+        android:text="تنظیمات"
+        app:layout_constraintBottom_toTopOf="@id/btn_exit_mainAct"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btn_exit_mainAct"
+        style="@style/Button_Style_BG_Blue_Then_Whit"
+        android:layout_width="190dp"
+        android:layout_marginBottom="@dimen/height_folder_all_upload_100dp"
+        android:text="خروج"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

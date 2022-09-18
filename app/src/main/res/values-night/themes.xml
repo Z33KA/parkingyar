@@ -1,0 +1,57 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ParkingYar" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Button_Style_BG_Blue_Then_Whit" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:background">@drawable/s_btn_bg_blue_then_whit</item>
+        <item name="android:layout_height">@dimen/margin_48_dp</item>
+        <item name="android:layout_width">@dimen/height_folder_all_upload_180dp</item>
+        <!--        <item name="android:textColor">@drawable/s_txt_whit_then_blue</item>-->
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Button_Style_BG_WHITE_THEN_BLUE" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:background">@drawable/s_btn_bg_whit_then_blue</item>
+        <item name="android:layout_height">@dimen/height_button_42_dp</item>
+        <item name="android:layout_width">@dimen/height_folder_all_upload_180dp</item>
+        <item name="android:textColor">@color/color_button_selected</item>
+    </style>
+    <style name="Button_Style_BG_Green_Then_Whit" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:background">@drawable/s_btn_bg_green_then_whit</item>
+        <item name="android:layout_height">@dimen/height_button_42_dp</item>
+        <item name="android:layout_width">@dimen/height_folder_all_upload_180dp</item>
+        <!--        <item name="android:textColor">@drawable/s_txt_whit_then_blue</item>-->
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Button_Style_BG_White" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:background">@drawable/s_btn_bg_white</item>
+        <item name="android:layout_height">@dimen/height_button_42_dp</item>
+        <item name="android:layout_width">@dimen/height_folder_all_upload_180dp</item>
+    </style>
+
+    <style name="Edit_Text_Background_White" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:textSize">@dimen/font_size_title_14_sp</item>
+        <item name="android:background">@drawable/edit_text_whit</item>
+        <item name="android:layout_height">@dimen/height_button_42_dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Edit_Text_Background_Grey" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:textSize">@dimen/font_size_title_16_sp</item>
+        <item name="android:background">@drawable/edit_text_grey</item>
+        <item name="android:layout_height">@dimen/height_button_42_dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/Black</item>
+    </style>
+</resources>

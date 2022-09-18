@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.SelectParkingActivity">
+
+    <ImageView
+        android:id="@+id/imgView_imageParking_selectParkingAct"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_margin="@dimen/lbl_normal_font_size_16"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@drawable/hashie1" />
+
+    <TextView
+        android:id="@+id/txtView_nameParking_selectParkingAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_8_dp"
+        android:gravity="right"
+        android:padding="@dimen/margin_8_dp"
+        android:textColor="@color/color_button_selected"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imgView_imageParking_selectParkingAct"
+        tools:text="نام پارکینگ" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_floor_selectParkingAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/lbl_normal_font_size_16"
+        android:paddingBottom="@dimen/margin_16_dp"
+        app:cardCornerRadius="@dimen/margin_8_dp"
+        app:cardElevation="@dimen/margin_4_dp"
+        app:layout_constraintTop_toBottomOf="@id/txtView_nameParking_selectParkingAct">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout_selectParkingAct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_16_dp">
+
+            <TextView
+                android:id="@+id/txtView_title_state_selectParkingAct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/lbl_normal_font_size_16"
+                android:gravity="right"
+                android:text="طبقه مورد نظر خود را انتخاب کنید"
+                android:textColor="@color/color_button_selected"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_selectStateHashieei_selectParkingAct"
+                style="@style/Button_Style_BG_WHITE_THEN_BLUE"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/margin_8_dp"
+                android:text="جایگاه مورد نظر خود را انتخاب کنید"
+                android:textColor="@color/color_button_selected"
+                android:textSize="@dimen/lbl_normal_font_size_16"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/txtView_botto_selectParkingAct"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_floor1_selectParkingAct"
+                style="@style/Button_Style_BG_WHITE_THEN_BLUE"
+                android:layout_width="0dp"
+                android:layout_margin="@dimen/margin_8_dp"
+                android:text="اول"
+                android:textSize="@dimen/lbl_normal_font_size_16"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/txtView_botto_selectParkingAct"
+                app:layout_constraintLeft_toRightOf="@id/btn_floor2_selectParkingAct"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_state_selectParkingAct" />
+
+            <Button
+                android:id="@+id/btn_floor2_selectParkingAct"
+                style="@style/Button_Style_BG_WHITE_THEN_BLUE"
+                android:layout_width="0dp"
+                android:layout_margin="@dimen/margin_8_dp"
+                android:text="دوم"
+                android:textSize="@dimen/lbl_normal_font_size_16"
+                android:visibility="gone"
+                app:layout_constraintLeft_toRightOf="@id/btn_floor3_selectParkingAct"
+                app:layout_constraintRight_toLeftOf="@id/btn_floor1_selectParkingAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_state_selectParkingAct" />
+
+            <Button
+                android:id="@+id/btn_floor3_selectParkingAct"
+                style="@style/Button_Style_BG_WHITE_THEN_BLUE"
+                android:layout_width="0dp"
+                android:layout_margin="@dimen/margin_8_dp"
+                android:text="سوم"
+                android:textSize="@dimen/lbl_normal_font_size_16"
+                android:visibility="gone"
+                app:layout_constraintLeft_toRightOf="@id/btn_floor4_selectParkingAct"
+                app:layout_constraintRight_toLeftOf="@id/btn_floor2_selectParkingAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_state_selectParkingAct" />
+
+            <Button
+                android:id="@+id/btn_floor4_selectParkingAct"
+                style="@style/Button_Style_BG_WHITE_THEN_BLUE"
+                android:layout_width="0dp"
+                android:layout_margin="@dimen/margin_8_dp"
+                android:text="چهارم"
+                android:textSize="@dimen/lbl_normal_font_size_16"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/btn_floor3_selectParkingAct"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_state_selectParkingAct" />
+
+            <TextView
+                android:id="@+id/txtView_botto_selectParkingAct"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_4_dp"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_time_selectParkingAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/lbl_normal_font_size_16"
+        android:paddingBottom="@dimen/margin_16_dp"
+        app:cardCornerRadius="@dimen/margin_8_dp"
+        app:cardElevation="@dimen/margin_4_dp"
+        app:layout_constraintTop_toBottomOf="@id/cardView_floor_selectParkingAct">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_16_dp">
+
+            <TextView
+                android:id="@+id/txtView_title_time_selectParkingAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_32_dp"
+                android:layout_marginRight="@dimen/margin_16_dp"
+                android:gravity="right"
+                android:text="مدت زمان پارک: "
+                android:textColor="@color/color_button_selected"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtVie_time_selectParkingAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8_dp"
+                tools:text="22:22:22"
+                android:textColor="@color/color_button_selected"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_time_selectParkingAct"
+                app:layout_constraintRight_toRightOf="@id/txtView_title_time_selectParkingAct"
+                app:layout_constraintLeft_toLeftOf="@id/txtView_title_time_selectParkingAct"/>
+
+            <NumberPicker
+                android:id="@+id/numPicker_minute_selectParkingAct"
+                android:layout_width="@dimen/margin_48_dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8_dp"
+                android:layout_marginRight="@dimen/margin_38_dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/txtView_title_time_selectParkingAct"
+                app:layout_constraintRight_toLeftOf="@+id/txtView_title_time_selectParkingAct"
+                app:layout_constraintTop_toTopOf="@+id/txtView_title_time_selectParkingAct" />
+
+            <TextView
+                android:id="@+id/txtView_dot_selectParkingAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_8_dp"
+                android:text=":"
+                app:layout_constraintBottom_toBottomOf="@id/numPicker_minute_selectParkingAct"
+                app:layout_constraintRight_toLeftOf="@id/numPicker_minute_selectParkingAct"
+                app:layout_constraintTop_toTopOf="@+id/numPicker_minute_selectParkingAct" />
+
+            <NumberPicker
+                android:id="@+id/numPicker_hour_selectParkingAct"
+                android:layout_width="@dimen/margin_48_dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_8_dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/txtView_dot_selectParkingAct"
+                app:layout_constraintRight_toLeftOf="@id/txtView_dot_selectParkingAct"
+                app:layout_constraintTop_toTopOf="@+id/txtView_dot_selectParkingAct" />
+
+            <ImageView
+                android:id="@+id/imgView_calender_selectParkingAct"
+                android:layout_width="@dimen/margin_48_dp"
+                android:layout_height="@dimen/margin_48_dp"
+                android:background="@mipmap/ic_calendar"
+                app:layout_constraintBottom_toBottomOf="@+id/numPicker_hour_selectParkingAct"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/numPicker_hour_selectParkingAct"
+                app:layout_constraintTop_toTopOf="@+id/numPicker_hour_selectParkingAct" />
+
+            <TextView
+                android:id="@+id/txtView_selected_month_selectParkingAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                tools:text="12 ماهه"
+                android:textColor="@color/color_button_selected"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/imgView_calender_selectParkingAct"
+                app:layout_constraintRight_toRightOf="@id/imgView_calender_selectParkingAct"
+                app:layout_constraintLeft_toLeftOf="@id/imgView_calender_selectParkingAct"/>
+
+
+            <TextView
+                android:id="@+id/txtView_title_price_selectParkingAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_38_dp"
+                android:layout_marginRight="@dimen/margin_16_dp"
+                android:gravity="right"
+                android:text="مبلغ قابل پرداخت: "
+                android:textColor="@color/color_button_selected"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtView_selected_month_selectParkingAct" />
+
+
+            <TextView
+                android:id="@+id/editText_price_selectParkingAct"
+                style="@style/Edit_Text_Background_Grey"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_42_dp"
+                android:layout_marginLeft="@dimen/margin_16_dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_size_title_18_sp"
+                android:layout_marginRight="@dimen/margin_32_dp"
+                app:layout_constraintBottom_toBottomOf="@id/txtView_title_price_selectParkingAct"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_price_selectParkingAct"
+                app:layout_constraintTop_toTopOf="@id/txtView_title_price_selectParkingAct" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtView_title_selected_state_selectParkingAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_24_dp"
+        android:text="جایگاه انتخاب شده:"
+        android:textColor="@color/color_button_selected"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/txtView_selected_state_selectParkingAct"
+        app:layout_constraintTop_toBottomOf="@id/cardView_time_selectParkingAct" />
+
+    <TextView
+        android:id="@+id/txtView_selected_state_selectParkingAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_24_dp"
+        android:text="انتخاب نشده"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/txtView_title_selected_state_selectParkingAct"
+        app:layout_constraintTop_toBottomOf="@id/cardView_time_selectParkingAct" />
+
+    <Button
+        android:id="@+id/btn_payment_selectParkingAct"
+        style="@style/Button_Style_BG_Blue_Then_Whit"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/margin_16_dp"
+        android:text="تاییـــــــــــــــــــد"
+        android:textSize="@dimen/lbl_normal_font_size_16"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

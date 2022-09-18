@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/s_btn_bg_white"
+    tools:context=".view.SelectedStateActivity"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtView_title_selectStateCustomAlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="@dimen/lbl_normal_font_size_16"
+        android:text="لطفا جایگاه مورد نظر را انتخاب کنید"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_selectStateCustomAlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/font_size_title_18_sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/txtView_title_selected_state_selectStateCustomAlertDialog"
+        app:layout_constraintTop_toBottomOf="@id/txtView_title_selectStateCustomAlertDialog" />
+
+    <TextView
+        android:id="@+id/txtView_title_selected_state_selectStateCustomAlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="@dimen/lbl_normal_font_size_16"
+        android:text="جایگاه انتخاب شده = "
+        app:layout_constraintBottom_toTopOf="@id/btn_ok_selectStateCustomAlertDialog"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/txtView_selected_state_selectStateCustomAlertDialog"
+        />
+    <TextView
+        android:id="@+id/txtView_selected_state_selectStateCustomAlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="@dimen/lbl_normal_font_size_16"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@id/btn_ok_selectStateCustomAlertDialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/txtView_title_selected_state_selectStateCustomAlertDialog"
+        />
+    <Button
+        android:id="@+id/btn_ok_selectStateCustomAlertDialog"
+        style="@style/Button_Style_BG_Green_Then_Whit"
+        android:layout_width="120dp"
+        android:layout_height="@dimen/margin_38_dp"
+        android:layout_margin="@dimen/margin_8_dp"
+        android:text="تایید"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_cancel_selectStateCustomAlertDialog" />
+
+    <Button
+        android:id="@+id/btn_cancel_selectStateCustomAlertDialog"
+        style="@style/Button_Style_BG_Green_Then_Whit"
+        android:layout_width="120dp"
+        android:layout_height="@dimen/margin_38_dp"
+        android:layout_margin="@dimen/margin_8_dp"
+        android:text="انصراف"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btn_ok_selectStateCustomAlertDialog"
+        app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,54 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--    margin values-->
+
+    <dimen name="margin_4_dp">4dp</dimen>
+    <dimen name="margin_8_dp">8dp</dimen>
+    <dimen name="margin_12_dp">12dp</dimen>
+    <dimen name="margin_16_dp">16dp</dimen>
+    <dimen name="margin_24_dp">24dp</dimen>
+    <dimen name="margin_32_dp">32dp</dimen>
+    <dimen name="margin_38_dp">38dp</dimen>
+    <dimen name="margin_42_dp">42dp</dimen>
+    <dimen name="margin_48_dp">48dp</dimen>
+    <dimen name="margin_52_dp">52dp</dimen>
+    <dimen name="margin_64_dp">64dp</dimen>
+    <!--    End Part Margin-->
+
+    <!--    Radius-->
+    <dimen name="radius_corner_8_dp">8dp</dimen>
+    <dimen name="radius_corner_16_dp">16dp</dimen>
+    <dimen name="radius_25_dp">25dp</dimen>
+    <dimen name="with_border_btn_2_dp">2dp</dimen>
+    <dimen name="text_size_button_16_sp">16sp</dimen>
+    <!--    End Radius-->
+
+    <dimen name="height_button_42_dp">42dp</dimen>
+    <dimen name="with_button_128_dp">128dp</dimen>
+    <dimen name="height_edit_text_38_dp">38dp</dimen>
+    <dimen name="with_edit_text_128_dp">128dp</dimen>
+
+
+    <dimen name="font_size_title_22_sp">22sp</dimen>
+    <dimen name="font_size_title_20_sp">20sp</dimen>
+    <dimen name="font_size_title_18_sp">18sp</dimen>
+    <dimen name="font_size_title_16_sp">16sp</dimen>
+    <dimen name="font_size_title_14_sp">14sp</dimen>
+    <dimen name="font_size_title_12_sp">12sp</dimen>
+    <dimen name="font_size_title_11_sp">11sp</dimen>
+    <dimen name="font_size_title_10_sp">10sp</dimen>
+
+
+    <integer name="small_font_size_12">0</integer>
+    <integer name="normal_font_size_16">1</integer>
+    <integer name="large_font_size_20">2</integer>
+
+    <dimen name="lbl_small_font_size_12">14sp</dimen>
+    <dimen name="lbl_normal_font_size_16">18dp</dimen>
+    <dimen name="lbl_large_font_size_20">22dp</dimen>
+
+    <dimen name="height_folder_all_upload_180dp">180sp</dimen>
+    <dimen name="height_folder_all_upload_100dp">100sp</dimen>
+
+</resources>

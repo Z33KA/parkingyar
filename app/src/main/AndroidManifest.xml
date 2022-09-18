@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.j.gharibi.parkingyar">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:allowClearUserData="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ParkingYar"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".view.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.SelectedStateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.SelectParkingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.MapSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.AccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.PayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.WalletActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.BeginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout_rvState"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_rvState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="@dimen/margin_8_dp"
+        app:cardElevation="@dimen/margin_4_dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:paddingRight="@dimen/margin_8_dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_state1_rvState"
+                style="@style/Button_Style_BG_Blue_Then_Whit"
+                android:layout_width="@dimen/margin_42_dp"
+                android:layout_height="@dimen/margin_32_dp"
+                android:layout_margin="@dimen/margin_8_dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="1" />
+
+            <View
+                android:id="@+id/view_right1_rvState"
+                android:layout_width="2dp"
+                android:layout_height="54dp"
+                android:layout_marginLeft="@dimen/margin_8_dp"
+                android:background="@color/black"
+                app:layout_constraintLeft_toRightOf="@id/btn_state1_rvState"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_state2_rvState"
+                style="@style/Button_Style_BG_Blue_Then_Whit"
+                android:layout_width="@dimen/margin_42_dp"
+                android:layout_height="@dimen/margin_32_dp"
+                android:layout_margin="@dimen/margin_8_dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/view_right1_rvState"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="2" />
+
+            <View
+                android:id="@+id/view_right2_rvState"
+                android:layout_width="2dp"
+                android:layout_height="54dp"
+                android:layout_marginLeft="@dimen/margin_8_dp"
+                android:background="@color/black"
+                app:layout_constraintLeft_toRightOf="@id/btn_state2_rvState"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_state3_rvState"
+                style="@style/Button_Style_BG_Blue_Then_Whit"
+                android:layout_width="@dimen/margin_42_dp"
+                android:layout_height="@dimen/margin_32_dp"
+                android:layout_margin="@dimen/margin_8_dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/view_right2_rvState"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="3" />
+
+            <View
+                android:id="@+id/view_right3_rvState"
+                android:layout_width="2dp"
+                android:layout_height="54dp"
+                android:layout_marginLeft="@dimen/margin_8_dp"
+                android:background="@color/black"
+                app:layout_constraintLeft_toRightOf="@id/btn_state3_rvState"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_state4_rvState"
+                style="@style/Button_Style_BG_Blue_Then_Whit"
+                android:layout_width="@dimen/margin_42_dp"
+                android:layout_height="@dimen/margin_32_dp"
+                android:layout_margin="@dimen/margin_8_dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/view_right3_rvState"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="4" />
+
+            <View
+                android:id="@+id/view_right4_rvState"
+                android:layout_width="2dp"
+                android:layout_height="54dp"
+                android:layout_marginLeft="@dimen/margin_8_dp"
+                android:background="@color/black"
+                app:layout_constraintLeft_toRightOf="@id/btn_state4_rvState"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_state5_rvState"
+                style="@style/Button_Style_BG_Blue_Then_Whit"
+                android:layout_width="@dimen/margin_42_dp"
+                android:layout_height="@dimen/margin_32_dp"
+                android:layout_margin="@dimen/margin_8_dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/view_right4_rvState"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="5" />
+
+            <View
+                android:id="@+id/view_right5_rvState"
+                android:layout_width="2dp"
+                android:layout_height="54dp"
+                android:layout_marginLeft="@dimen/margin_8_dp"
+                android:background="@color/black"
+                app:layout_constraintLeft_toRightOf="@id/btn_state5_rvState"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_state6_rvState"
+                style="@style/Button_Style_BG_Blue_Then_Whit"
+                android:layout_width="@dimen/margin_42_dp"
+                android:layout_height="@dimen/margin_32_dp"
+                android:layout_margin="@dimen/margin_8_dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/view_right5_rvState"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="6" />
+
+            <View
+                android:id="@+id/view_middle_rvState"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/margin_8_dp"
+                app:layout_constraintLeft_toLeftOf="@id/btn_state1_rvState"
+                app:layout_constraintRight_toRightOf="@id/btn_state6_rvState"
+                android:background="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/btn_state1_rvState" />
+
+            <Button
+                android:id="@+id/btn_state7_rvState"
+                style="@style/Button_Style_BG_Blue_Then_Whit"
+                android:layout_width="@dimen/margin_42_dp"
+                android:layout_height="@dimen/margin_32_dp"
+                android:layout_margin="@dimen/margin_8_dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_middle_rvState"
+                tools:text="7" />
+
+            <View
+                android:id="@+id/view_right7_rvState"
+                android:layout_width="2dp"
+                android:layout_height="54dp"
+                android:layout_marginLeft="@dimen/margin_8_dp"
+                android:background="@color/black"
+                app:layout_constraintLeft_toRightOf="@id/btn_state7_rvState"
+                app:layout_constraintTop_toBottomOf="@id/view_middle_rvState" />
+
+            <Button
+                android:id="@+id/btn_state8_rvState"
+                style="@style/Button_Style_BG_Blue_Then_Whit"
+                android:layout_width="@dimen/margin_42_dp"
+                android:layout_height="@dimen/margin_32_dp"
+                android:layout_margin="@dimen/margin_8_dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/view_right1_rvState"
+                app:layout_constraintTop_toBottomOf="@id/view_middle_rvState"
+                tools:text="8" />
+
+            <View
+                android:id="@+id/view_right8_rvState"
+                android:layout_width="2dp"
+                android:layout_height="54dp"
+                android:layout_marginLeft="@dimen/margin_8_dp"
+                android:background="@color/black"
+                app:layout_constraintLeft_toRightOf="@id/btn_state8_rvState"
+                app:layout_constraintTop_toBottomOf="@id/view_middle_rvState" />
+
+            <Button
+                android:id="@+id/btn_state9_rvState"
+                style="@style/Button_Style_BG_Blue_Then_Whit"
+                android:layout_width="@dimen/margin_42_dp"
+                android:layout_height="@dimen/margin_32_dp"
+                android:layout_margin="@dimen/margin_8_dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/view_right2_rvState"
+                app:layout_constraintTop_toBottomOf="@id/view_middle_rvState"
+                tools:text="9" />
+
+            <View
+                android:id="@+id/view_right9_rvState"
+                android:layout_width="2dp"
+                android:layout_height="54dp"
+                android:layout_marginLeft="@dimen/margin_8_dp"
+                android:background="@color/black"
+                app:layout_constraintLeft_toRightOf="@id/btn_state9_rvState"
+                app:layout_constraintTop_toBottomOf="@id/view_middle_rvState" />
+
+            <Button
+                android:id="@+id/btn_state10_rvState"
+                style="@style/Button_Style_BG_Blue_Then_Whit"
+                android:layout_width="@dimen/margin_42_dp"
+                android:layout_height="@dimen/margin_32_dp"
+                android:layout_margin="@dimen/margin_8_dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/view_right3_rvState"
+                app:layout_constraintTop_toBottomOf="@id/view_middle_rvState"
+                tools:text="10" />
+
+            <View
+                android:id="@+id/view_right10_rvState"
+                android:layout_width="2dp"
+                android:layout_height="54dp"
+                android:layout_marginLeft="@dimen/margin_8_dp"
+                android:background="@color/black"
+                app:layout_constraintLeft_toRightOf="@id/btn_state10_rvState"
+                app:layout_constraintTop_toBottomOf="@id/view_middle_rvState" />
+
+            <Button
+                android:id="@+id/btn_state11_rvState"
+                style="@style/Button_Style_BG_Blue_Then_Whit"
+                android:layout_width="@dimen/margin_42_dp"
+                android:layout_height="@dimen/margin_32_dp"
+                android:layout_margin="@dimen/margin_8_dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/view_right4_rvState"
+                app:layout_constraintTop_toBottomOf="@id/view_middle_rvState"
+                tools:text="11" />
+
+            <View
+                android:id="@+id/view_right11_rvState"
+                android:layout_width="2dp"
+                android:layout_height="54dp"
+                android:layout_marginLeft="@dimen/margin_8_dp"
+                android:background="@color/black"
+                app:layout_constraintLeft_toRightOf="@id/btn_state11_rvState"
+                app:layout_constraintTop_toBottomOf="@id/view_middle_rvState" />
+
+            <Button
+                android:id="@+id/btn_state12_rvState"
+                style="@style/Button_Style_BG_Blue_Then_Whit"
+                android:layout_width="@dimen/margin_42_dp"
+                android:layout_height="@dimen/margin_32_dp"
+                android:layout_margin="@dimen/margin_8_dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/view_right5_rvState"
+                app:layout_constraintTop_toBottomOf="@id/view_middle_rvState"
+                tools:text="12" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_32_dp"
+                app:layout_constraintTop_toBottomOf="@id/btn_state7_rvState"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_4_dp"
+        app:layout_constraintTop_toBottomOf="@id/cardView_rvState"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

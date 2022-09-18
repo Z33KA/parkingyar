@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.AccountActivity">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_info_accountAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_8_dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginRight="@dimen/margin_8_dp"
+        android:elevation="@dimen/with_border_btn_2_dp"
+        app:cardBackgroundColor="@color/TRANSPARENT70"
+        app:cardCornerRadius="@dimen/margin_12_dp"
+        app:cardElevation="1dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingBottom="@dimen/margin_16_dp">
+
+            <TextView
+                android:id="@+id/txtView_title_name_accountAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8_dp"
+                android:text="نام و نام خانوادگی: "
+                android:textColor="@color/base_color_button"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/edtText_name_accountAct"
+                app:layout_constraintLeft_toRightOf="@id/edtText_name_accountAct"
+                app:layout_constraintTop_toTopOf="@id/edtText_name_accountAct" />
+
+            <EditText
+                android:id="@+id/edtText_name_accountAct"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/font_size_title_16_sp"
+                android:gravity="center"
+                android:text=""
+                android:singleLine="true"
+                android:maxLength="50"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtView_title_phone_accountAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8_dp"
+                android:text="موبایل: "
+                android:textColor="@color/base_color_button"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/edtText_phone_accountAct"
+                app:layout_constraintLeft_toRightOf="@id/edtText_phone_accountAct"
+                app:layout_constraintTop_toTopOf="@id/edtText_phone_accountAct" />
+
+            <EditText
+                android:id="@+id/edtText_phone_accountAct"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/font_size_title_16_sp"
+                android:inputType="phone"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLength="13"
+                android:text=""
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtText_name_accountAct" />
+
+
+            <TextView
+                android:id="@+id/txtView_title_color_car_accountAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8_dp"
+                android:text="رنگ ماشین: "
+                android:textColor="@color/base_color_button"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/edtText_color_car_accountAct"
+                app:layout_constraintLeft_toRightOf="@id/edtText_color_car_accountAct"
+                app:layout_constraintTop_toTopOf="@id/edtText_color_car_accountAct" />
+
+            <EditText
+                android:id="@+id/edtText_color_car_accountAct"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/font_size_title_16_sp"
+                android:text=""
+                android:singleLine="true"
+                android:maxLength="20"
+                android:textStyle="bold"
+                android:gravity="center"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtText_phone_accountAct" />
+
+            <TextView
+                android:id="@+id/txtView_title_type_car_weight_accountAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8_dp"
+                android:text="نوع ماشین: "
+                android:textColor="@color/base_color_button"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/spinner_type_car_weight_accountAct"
+                app:layout_constraintLeft_toRightOf="@id/spinner_type_car_weight_accountAct"
+                app:layout_constraintTop_toTopOf="@id/spinner_type_car_weight_accountAct" />
+
+            <Spinner
+                android:id="@+id/spinner_type_car_weight_accountAct"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/font_size_title_16_sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtText_color_car_accountAct" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/imgView_pelak_accountAct"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_64_dp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/margin_16_dp"
+        android:src="@mipmap/pelak"
+        app:layout_constraintTop_toBottomOf="@id/cardView_info_accountAct" />
+
+    <EditText
+        android:id="@+id/edtText_pelak1_accountAct"
+        android:layout_width="@dimen/margin_48_dp"
+        style="@style/Edit_Text_Background_White"
+        android:layout_height="@dimen/margin_48_dp"
+        android:maxLength="2"
+        android:inputType="numberSigned"
+        android:layout_margin="@dimen/font_size_title_16_sp"
+        android:hint="11"
+        android:singleLine="true"
+        android:textStyle="bold"
+        android:textSize="@dimen/font_size_title_22_sp"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/edtText_pelak2_accountAct"
+        app:layout_constraintTop_toBottomOf="@id/cardView_info_accountAct" />
+
+    <EditText
+        android:id="@+id/edtText_pelak2_accountAct"
+        android:layout_width="@dimen/margin_48_dp"
+        style="@style/Edit_Text_Background_White"
+        android:textSize="@dimen/font_size_title_22_sp"
+        android:maxLength="1"
+        android:singleLine="true"
+        android:layout_height="@dimen/margin_48_dp"
+        android:layout_margin="@dimen/font_size_title_16_sp"
+        android:hint="ب"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintRight_toLeftOf="@id/edtText_pelak3_accountAct"
+        app:layout_constraintLeft_toRightOf="@+id/edtText_pelak1_accountAct"
+        app:layout_constraintTop_toBottomOf="@id/cardView_info_accountAct" />
+
+    <EditText
+        android:id="@+id/edtText_pelak3_accountAct"
+        android:layout_width="@dimen/margin_64_dp"
+        style="@style/Edit_Text_Background_White"
+        android:layout_height="@dimen/margin_48_dp"
+        android:layout_margin="@dimen/font_size_title_16_sp"
+        android:maxLength="3"
+        android:singleLine="true"
+        android:inputType="numberSigned"
+        android:textSize="@dimen/font_size_title_22_sp"
+        android:hint="326"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintLeft_toRightOf="@+id/edtText_pelak2_accountAct"
+        app:layout_constraintRight_toLeftOf="@id/edtText_pelak4_accountAct"
+        app:layout_constraintTop_toBottomOf="@id/cardView_info_accountAct" />
+    <EditText
+        android:id="@+id/edtText_pelak4_accountAct"
+        android:layout_width="@dimen/margin_48_dp"
+        style="@style/Edit_Text_Background_White"
+        android:layout_height="@dimen/margin_48_dp"
+        android:layout_margin="@dimen/font_size_title_16_sp"
+        android:hint="11"
+        android:singleLine="true"
+        android:inputType="numberSigned"
+        android:textStyle="bold"
+        android:maxLength="2"
+        android:gravity="center"
+        app:layout_constraintLeft_toRightOf="@+id/edtText_pelak3_accountAct"
+        android:textSize="@dimen/font_size_title_22_sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardView_info_accountAct" />
+    <Button
+        android:id="@+id/btn_wallet_accountAct"
+        style="@style/Button_Style_BG_Blue_Then_Whit"
+        android:layout_marginTop="@dimen/margin_16_dp"
+        android:layout_marginRight="@dimen/margin_12_dp"
+        android:drawableRight="@drawable/ic_baseline_monetization_on_24"
+        android:paddingRight="@dimen/margin_12_dp"
+        android:text="کیف پول"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtText_pelak1_accountAct" />
+
+    <Button
+        android:id="@+id/btn_edit_accountAct"
+        style="@style/Button_Style_BG_Blue_Then_Whit"
+        android:layout_marginLeft="@dimen/margin_12_dp"
+        android:layout_marginTop="@dimen/margin_16_dp"
+        android:drawableRight="@drawable/ic_baseline_edit_24"
+        android:paddingRight="@dimen/margin_12_dp"
+        android:text="تایید"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_wallet_accountAct"
+        app:layout_constraintTop_toBottomOf="@+id/edtText_pelak1_accountAct" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

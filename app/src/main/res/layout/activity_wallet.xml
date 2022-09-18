@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/account_background"
+    tools:context=".view.WalletActivity">
+
+    <TextView
+        android:id="@+id/txtView_title_money_walletAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="@dimen/margin_32_dp"
+        android:text="موجودی فعلی: "
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/txtView_money_walletAct"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtView_money_walletAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="@dimen/margin_32_dp"
+        android:text="600.000"
+        android:textStyle="bold"
+        app:layout_constraintRight_toLeftOf="@id/txtView_title_money_walletAct"
+        app:layout_constraintLeft_toRightOf="@+id/txtView_toman_walletAct"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtView_toman_walletAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="@dimen/margin_32_dp"
+        android:text="تومان"
+        android:textStyle="bold"
+        app:layout_constraintRight_toLeftOf="@id/txtView_money_walletAct"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtView_up_money_walletAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_32_dp"
+        android:layout_marginRight="@dimen/margin_32_dp"
+        android:text="مبلغ جهت افزایش:"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtView_title_money_walletAct" />
+    <EditText
+        android:layout_width="@dimen/height_folder_all_upload_180dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtView_up_money_walletAct"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/editText_money_walletAct"/>
+    <Button
+        android:layout_width="@dimen/height_folder_all_upload_100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/editText_money_walletAct"
+        android:id="@+id/btn_pay_walletAct"
+        android:text="پرداخت"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btn_cancel_walletAct"
+        android:layout_marginTop="@dimen/margin_32_dp"
+        style="@style/Button_Style_BG_Blue_Then_Whit"/>
+    <Button
+        android:layout_width="@dimen/height_folder_all_upload_100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/editText_money_walletAct"
+        android:textColor="@color/base_color_button"
+        android:id="@+id/btn_cancel_walletAct"
+        android:text="انصراف"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_pay_walletAct"
+        android:layout_marginTop="@dimen/margin_32_dp"
+        style="@style/Button_Style_BG_White"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

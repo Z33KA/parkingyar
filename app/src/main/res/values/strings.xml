@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">ParkingYar</string>
+
+    <string-array name="font_size_array">
+        <item>کوچک</item>
+        <item>معمولی</item>
+        <item>بزرگ</item>
+    </string-array>
+
+    <string-array name="theme_app">
+        <item>روز</item>
+        <item>شب</item>
+    </string-array>
+    <string-array name="type_car">
+        <item>ماشین ابعاد پایین تا 900 کیلو(پراید ...)</item>
+        <item>ماشین ابعاد متوسط تا 1400 کیلو(سمند ...)</item>
+        <item>ماشین ابعاد بالا تا 2500 کیلو(لندکروز ...)</item>
+    </string-array>
+    <string-array name="hour">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </string-array>
+    <string-array name="minute">
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+    </string-array>
+</resources>

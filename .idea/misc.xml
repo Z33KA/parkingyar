@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/drawable/bg_grey_bottom_sheet_header.xml" value="0.1" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/drawable/edit_text_grey.xml" value="0.1095" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/drawable/edit_text_whit.xml" value="0.1" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.1" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/drawable/ic_baseline_monetization_on_24.xml" value="0.1095" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/drawable/s_btn_bg_blue_then_whit.xml" value="0.1" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/drawable/s_btn_bg_whit_then_blue.xml" value="0.1095" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/drawable/s_btn_bg_white.xml" value="0.1535" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/layout/activity_account.xml" value="0.264" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/layout/activity_beging.xml" value="0.2421875" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/layout/activity_main2.xml" value="0.13949275362318841" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/layout/activity_map.xml" value="0.13020833333333334" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/layout/activity_map_search.xml" value="0.1" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/layout/activity_pay.xml" value="0.13020833333333334" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/layout/activity_select_parking.xml" value="0.2421875" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/layout/activity_selected_state.xml" value="0.11770833333333333" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/layout/activity_setting.xml" value="0.11614583333333334" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/layout/activity_wallet.xml" value="0.4" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/layout/bottom_sheet_parking_type.xml" value="0.2421875" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/layout/bottom_sheet_parking_type_layout.xml" value="0.264" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/layout/bottom_sheet_reserved_parking_layout.xml" value="0.3990719257540603" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/layout/layout_custom_alert_dialog_message.xml" value="0.11614583333333334" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/layout/layout_custom_alert_dialog_payment.xml" value="0.2421875" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/layout/layout_custom_alert_dialog_select_state.xml" value="0.2421875" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/layout/layout_custom_alert_dialog_select_state_omoomi.xml" value="0.1" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/layout/remove_marker_bottom_sheet.xml" value="0.16875" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/layout/rv_layout_hasheei_parking.xml" value="0.6" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/layout/rv_layout_parking.xml" value="0.536" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/layout/rv_layout_reserve_parking.xml" value="0.264" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/menu/menu_hours.xml" value="0.2421875" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/menu/menu_item_calender.xml" value="0.2421875" />
+        <entry key="..\:/Project's/ParkingYar/ParkingYar/app/src/main/res/menu/menu_item_minute.xml" value="0.2421875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

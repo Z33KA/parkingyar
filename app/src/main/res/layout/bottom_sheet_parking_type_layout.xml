@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintLayout_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/TRANSPARENT70"
+    android:clickable="true"
+    android:fitsSystemWindows="true"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="72dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <ImageView
+        android:id="@+id/imgView_background_searchAct"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_48_dp"
+        android:layout_marginTop="@dimen/margin_24_dp"
+        android:background="@drawable/bg_grey_bottom_sheet_header"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgView_header_selected_parking_omomie_searchAct"
+        android:layout_width="@dimen/height_edit_text_38_dp"
+        android:layout_height="@dimen/margin_4_dp"
+        android:layout_marginLeft="@dimen/margin_32_dp"
+        android:background="@color/color_button_selected"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/imgView_background_searchAct"
+        app:layout_constraintTop_toTopOf="@id/imgView_background_searchAct" />
+
+    <ImageView
+        android:id="@+id/imgView_park_omoomi_searchAct"
+        android:layout_width="@dimen/height_edit_text_38_dp"
+        android:layout_height="@dimen/height_edit_text_38_dp"
+        android:layout_marginLeft="@dimen/margin_32_dp"
+        android:src="@mipmap/park_omomi"
+        app:layout_constraintBottom_toBottomOf="@id/imgView_background_searchAct"
+        app:layout_constraintLeft_toLeftOf="@id/imgView_background_searchAct"
+        app:layout_constraintTop_toTopOf="@id/imgView_background_searchAct" />
+
+    <ImageView
+        android:id="@+id/imgView_header_selected_parking_hashieei_searchAct"
+        android:layout_width="@dimen/margin_42_dp"
+        android:layout_height="@dimen/margin_4_dp"
+        android:layout_marginRight="@dimen/margin_32_dp"
+        android:background="@color/color_button_selected"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="@id/imgView_background_searchAct"
+        app:layout_constraintTop_toTopOf="@id/imgView_background_searchAct" />
+
+    <ImageView
+        android:id="@+id/imgView_park_hashieei_searchAct"
+        android:layout_width="@dimen/height_edit_text_38_dp"
+        android:layout_height="@dimen/height_edit_text_38_dp"
+        android:layout_marginRight="@dimen/margin_32_dp"
+        android:src="@mipmap/park_hashieyi"
+        app:layout_constraintBottom_toBottomOf="@id/imgView_background_searchAct"
+        app:layout_constraintRight_toRightOf="@id/imgView_background_searchAct"
+        app:layout_constraintTop_toTopOf="@id/imgView_background_searchAct" />
+
+    <ImageView
+        android:id="@+id/imgBtn_location_searchAct"
+        android:layout_width="@dimen/margin_64_dp"
+        android:layout_height="@dimen/margin_64_dp"
+        android:layout_marginBottom="@dimen/margin_8_dp"
+        android:src="@mipmap/location"
+        app:layout_constraintBottom_toBottomOf="@id/imgView_background_searchAct"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_bottom_sheet_parking_type"
+        android:layout_width="0dp"
+        android:layout_height="280dp"
+        android:background="#FCFCFF"
+        android:padding="@dimen/margin_4_dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgView_background_searchAct" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="base_color_button">#7109B6</color>
+
+    <color name="base_background">#754EA0</color>
+    <color name="base_background_toolbar">#ffffff</color>
+
+    <color name="color_button_unselect_gray">#788390</color>
+    <color name="color_button_selected">#55208A</color>
+    <color name="color_button_selected1">#55208A</color>
+
+    <color name="background_view_gray">#ECEFF4</color>
+
+    <color name="TRANSPARENT40">#7000BCD4</color>
+    <color name="TRANSPARENT70">#00000070</color>
+    <color name="TRANSPARENT50">#303F51B5</color>
+    <color name="TRANSPARENT_BLUE50">#5090CAF9</color>
+
+    <color name="Black">#000000</color>
+    <color name="White">#ffffff</color>
+    <color name="Red">#f44336</color>
+    <color name="Red200">#ef9a9a</color>
+    <color name="Pink">#E91E63</color>
+    <color name="Pink200">#F48FB1</color>
+    <color name="Purple">#9C27B0</color>
+    <color name="Purple200">#CE93D8</color>
+    <color name="Deep_Purple">#673AB7</color>
+    <color name="Deep_Purple200">#B39DDB</color>
+    <color name="Indigo">#3F51B5</color>
+    <color name="Indigo200">#9FA8DA</color>
+    <color name="Blue_Dark">#1A237E</color>
+    <color name="Blue">#2196F3</color>
+    <color name="Blue200">#90CAF9</color>
+    <color name="Light_Blue">#03A9F4</color>
+    <color name="Light_Blue200">#81D4FA</color>
+    <color name="Cyan">#00BCD4</color>
+    <color name="Cyan200">#80DEEA</color>
+    <color name="Teal">#009688</color>
+    <color name="Teal200">#80CBC4</color>
+    <color name="Green">#4CAF50</color>
+    <color name="Green200">#A5D6A7</color>
+    <color name="Light_Green">#8BC34A</color>
+    <color name="Light_Green200">#C5E1A5</color>
+    <color name="Lime">#CDDC39</color>
+    <color name="Lime200">#E6EE9C</color>
+    <color name="Yellow">#FFEB3B</color>
+    <color name="Yellow200">#FFF59D</color>
+    <color name="Amber">#FFC107</color>
+    <color name="Amber200">#FFE082</color>
+    <color name="Orange">#FF9800</color>
+    <color name="Orange200">#FFCC80</color>
+    <color name="Deep_Orange">#FF5722</color>
+    <color name="Deep_Orange200">#FFAB91</color>
+    <color name="Brown">#795548</color>
+    <color name="Brown200">#BCAAA4</color>
+    <color name="Grey">#9E9E9E</color>
+    <color name="Grey200">#EEEEEE</color>
+    <color name="Blue_grey">#607D8B</color>
+    <color name="Blue_grey200">#B0BEC5</color>
+</resources>

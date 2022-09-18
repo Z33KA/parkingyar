@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="app/build/generated/source/buildConfig/debug"/>
+	<classpathentry kind="src" path="app/build/generated/source/buildConfig/release"/>
+	<classpathentry kind="src" path="app/src/androidTest/java"/>
+	<classpathentry excluding="com/j/gharibi/parkingyar/utility/" kind="src" path="app/src/main/java"/>
+	<classpathentry kind="src" path="app/src/main/java/com/j/gharibi/parkingyar/utility"/>
+	<classpathentry kind="src" path="app/src/test/java"/>
+	<classpathentry kind="lib" path="app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/release/R.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/compressed_assets/debug/out/assets/fonts/aban.ttf.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/compressed_assets/debug/out/assets/fonts/shabnam_bold_fd.ttf.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/compressed_assets/debug/out/assets/styles_53.zip.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/compressed_assets/release/out/assets/fonts/aban.ttf.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/compressed_assets/release/out/assets/fonts/shabnam_bold_fd.ttf.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/compressed_assets/release/out/assets/styles_53.zip.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/merged_java_res/debug/base.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/merged_java_res/release/base.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/project_dex_archive/debug/out/50359337646852110fdde30a1e6e33637e26b3d18d94d5084d0ca9b105e9bb43_0.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/project_dex_archive/debug/out/50359337646852110fdde30a1e6e33637e26b3d18d94d5084d0ca9b105e9bb43_1.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/project_dex_archive/debug/out/50359337646852110fdde30a1e6e33637e26b3d18d94d5084d0ca9b105e9bb43_2.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/project_dex_archive/debug/out/50359337646852110fdde30a1e6e33637e26b3d18d94d5084d0ca9b105e9bb43_3.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/project_dex_archive/release/out/50359337646852110fdde30a1e6e33637e26b3d18d94d5084d0ca9b105e9bb43_0.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/project_dex_archive/release/out/50359337646852110fdde30a1e6e33637e26b3d18d94d5084d0ca9b105e9bb43_1.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/project_dex_archive/release/out/50359337646852110fdde30a1e6e33637e26b3d18d94d5084d0ca9b105e9bb43_2.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/project_dex_archive/release/out/50359337646852110fdde30a1e6e33637e26b3d18d94d5084d0ca9b105e9bb43_3.jar"/>
+	<classpathentry kind="lib" path="gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="output" path="app/build/intermediates/javac/debug/classes"/>
+</classpath>

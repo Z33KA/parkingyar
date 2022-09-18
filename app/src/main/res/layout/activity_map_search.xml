@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MapSearchActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <org.neshan.mapsdk.MapView
+            android:id="@+id/map_searchAct"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgView_search_searchAct"
+            android:layout_width="@dimen/margin_48_dp"
+            android:layout_height="@dimen/margin_48_dp"
+            android:layout_margin="@dimen/margin_12_dp"
+            android:background="@drawable/edit_text_whit"
+            android:src="@mipmap/search"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/editText_searchSearchAct"
+            style="@style/Edit_Text_Background_White"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/margin_48_dp"
+            android:layout_margin="@dimen/margin_12_dp"
+            android:padding="@dimen/margin_8_dp"
+            android:textSize="@dimen/font_size_title_18_sp"
+            app:layout_constraintBottom_toBottomOf="@id/imgView_search_searchAct"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/imgView_search_searchAct"
+            app:layout_constraintTop_toTopOf="@id/imgView_search_searchAct" />
+
+        <!--        <Button-->
+        <!--            android:id="@+id/btn_select_searchAct"-->
+        <!--            android:layout_width="@dimen/margin_48_dp"-->
+        <!--            android:layout_height="@dimen/margin_48_dp"-->
+        <!--            android:layout_margin="@dimen/margin_12_dp"-->
+        <!--            android:background="@drawable/edit_text_whit"-->
+        <!--            android:text="انتخاب"-->
+        <!--            app:layout_constraintRight_toRightOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/imgView_search_searchAct" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/txtView_parking_searchSearchAct"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="@dimen/margin_48_dp"-->
+        <!--            android:layout_margin="@dimen/margin_12_dp"-->
+        <!--            android:background="@color/TRANSPARENT50"-->
+        <!--            android:padding="@dimen/margin_8_dp"-->
+        <!--            android:textColor="@color/White"-->
+        <!--            android:textSize="@dimen/font_size_title_18_sp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@id/btn_select_searchAct"-->
+        <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--            app:layout_constraintRight_toLeftOf="@+id/btn_select_searchAct"-->
+        <!--            app:layout_constraintTop_toTopOf="@id/btn_select_searchAct" />-->
+
+        <TextView
+            android:id="@+id/txtView_distance_searchSearchAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@color/TRANSPARENT50"
+            android:textColor="@color/Green"
+            app:layout_constraintLeft_toLeftOf="@+id/editText_searchSearchAct"
+            app:layout_constraintRight_toRightOf="@+id/editText_searchSearchAct"
+            app:layout_constraintTop_toBottomOf="@+id/editText_searchSearchAct" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <include layout="@layout/bottom_sheet_parking_type_layout" />
+
+    <include layout="@layout/bottom_sheet_reserved_parking_layout" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

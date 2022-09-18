@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout_bottomSheetReservedLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/s_btn_bg_white"
+    android:clickable="true"
+    android:fitsSystemWindows="true"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <ImageView
+        android:id="@+id/imgView_qrcode_bottomSheetReservedLayout"
+        android:layout_width="@dimen/with_edit_text_128_dp"
+        android:layout_height="@dimen/with_edit_text_128_dp"
+        android:layout_margin="@dimen/margin_8_dp"
+        android:src="@mipmap/qrcode"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtView_parking_name_bottomSheetReservedLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8_dp"
+        android:gravity="center"
+        android:textColor="@color/color_button_selected"
+        android:textSize="@dimen/font_size_title_18_sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/imgView_qrcode_bottomSheetReservedLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="پاکینگ حاشیه ایی صفری" />
+
+    <TextView
+        android:id="@+id/txtView_title_state_bottomSheetReservedLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_4_dp"
+        android:gravity="center"
+        android:text="جای پارک: "
+        android:textColor="@color/color_button_selected"
+        android:textSize="@dimen/font_size_title_18_sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toLeftOf="@id/imgView_qrcode_bottomSheetReservedLayout"
+        app:layout_constraintTop_toBottomOf="@id/txtView_parking_name_bottomSheetReservedLayout" />
+
+    <TextView
+        android:id="@+id/txtView_state_bottomSheetReservedLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_4_dp"
+        android:gravity="center"
+        android:textColor="@color/color_button_selected"
+        android:textSize="@dimen/font_size_title_18_sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/txtView_title_state_bottomSheetReservedLayout"
+        app:layout_constraintTop_toBottomOf="@id/txtView_parking_name_bottomSheetReservedLayout"
+        tools:text="جای پارک: " />
+
+    <TextView
+        android:id="@+id/txtView_title_num_reserve_bottomSheetReservedLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_4_dp"
+        android:gravity="center"
+        android:text="شماره رزرو: "
+        android:textColor="@color/color_button_selected"
+        android:textSize="@dimen/font_size_title_18_sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toLeftOf="@id/imgView_qrcode_bottomSheetReservedLayout"
+        app:layout_constraintTop_toBottomOf="@id/txtView_title_state_bottomSheetReservedLayout" />
+
+    <TextView
+        android:id="@+id/txtView_num_reserve_bottomSheetReservedLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_4_dp"
+        android:gravity="center"
+        android:textColor="@color/color_button_selected"
+        android:textSize="@dimen/font_size_title_18_sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/txtView_title_num_reserve_bottomSheetReservedLayout"
+        app:layout_constraintTop_toBottomOf="@id/txtView_title_state_bottomSheetReservedLayout"
+        tools:text="شماره رزرو: " />
+
+    <Button
+        android:id="@+id/btn_navigation_bottomSheetReservedLayout"
+        style="@style/Button_Style_BG_Blue_Then_Whit"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/margin_38_dp"
+        android:layout_marginLeft="@dimen/margin_4_dp"
+        android:layout_marginTop="@dimen/margin_4_dp"
+        android:layout_marginRight="@dimen/margin_8_dp"
+        android:onClick="drawLineNavigation"
+        android:text="مسیریابی"
+        app:layout_constraintLeft_toRightOf="@id/btn_lock_bottomSheetReservedLayout"
+        app:layout_constraintRight_toLeftOf="@id/imgView_qrcode_bottomSheetReservedLayout"
+        app:layout_constraintTop_toBottomOf="@id/txtView_title_num_reserve_bottomSheetReservedLayout" />
+
+    <Button
+        android:id="@+id/btn_lock_bottomSheetReservedLayout"
+        style="@style/Button_Style_BG_Blue_Then_Whit"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/margin_38_dp"
+        android:layout_marginLeft="@dimen/margin_8_dp"
+        android:layout_marginTop="@dimen/margin_4_dp"
+        android:layout_marginRight="@dimen/margin_4_dp"
+        android:text="قفل جایگاه"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_navigation_bottomSheetReservedLayout"
+        app:layout_constraintTop_toBottomOf="@id/txtView_title_num_reserve_bottomSheetReservedLayout" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_bottomSheetReservedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_8_dp"
+        app:cardCornerRadius="@dimen/margin_8_dp"
+        app:cardElevation="@dimen/margin_8_dp"
+        app:layout_constraintTop_toBottomOf="@id/imgView_qrcode_bottomSheetReservedLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtView_title_up_time_bottomSheetReservedLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8_dp"
+                android:gravity="center"
+                android:text="افزایش مدت رزرو: "
+                android:textColor="@color/color_button_selected"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/imgView_15min_bottomSheetReservedLayout"
+                app:layout_constraintLeft_toLeftOf="@id/imgView_60min_bottomSheetReservedLayout"
+                app:layout_constraintRight_toRightOf="@id/imgView_15min_bottomSheetReservedLayout"
+                app:layout_constraintTop_toTopOf="@id/imgView_15min_bottomSheetReservedLayout" />
+
+            <TextView
+                android:id="@+id/txtView_title_15min_time_bottomSheetReservedLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_4_dp"
+                android:layout_marginRight="@dimen/margin_8_dp"
+                android:gravity="center"
+                android:text="15 دقیقه"
+                android:textColor="@color/color_button_selected"
+                android:textSize="@dimen/font_size_title_10_sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/txtView_title_30min_time_bottomSheetReservedLayout"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_up_time_bottomSheetReservedLayout"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgView_15min_bottomSheetReservedLayout"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@color/Grey200"
+                app:layout_constraintLeft_toLeftOf="@id/txtView_title_15min_time_bottomSheetReservedLayout"
+                app:layout_constraintRight_toRightOf="@id/txtView_title_15min_time_bottomSheetReservedLayout"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_15min_time_bottomSheetReservedLayout" />
+
+            <TextView
+                android:id="@+id/txtView_title_30min_time_bottomSheetReservedLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_4_dp"
+                android:layout_marginRight="@dimen/margin_8_dp"
+                android:gravity="center"
+                android:text="30 دقیقه"
+                android:textColor="@color/color_button_selected"
+                android:textSize="@dimen/font_size_title_10_sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/txtView_title_60min_time_bottomSheetReservedLayout"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_15min_time_bottomSheetReservedLayout"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgView_30min_bottomSheetReservedLayout"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@color/Grey200"
+                app:layout_constraintLeft_toLeftOf="@id/txtView_title_30min_time_bottomSheetReservedLayout"
+                app:layout_constraintRight_toRightOf="@id/txtView_title_30min_time_bottomSheetReservedLayout"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_30min_time_bottomSheetReservedLayout" />
+
+            <TextView
+                android:id="@+id/txtView_title_60min_time_bottomSheetReservedLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_4_dp"
+                android:layout_marginRight="@dimen/margin_8_dp"
+                android:gravity="center"
+                android:text="60 دقیقه"
+                android:textColor="@color/color_button_selected"
+                android:textSize="@dimen/font_size_title_10_sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/btn_ok_bottomSheetReservedLayout"
+                app:layout_constraintRight_toLeftOf="@id/txtView_title_30min_time_bottomSheetReservedLayout"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgView_60min_bottomSheetReservedLayout"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@color/Grey200"
+                app:layout_constraintLeft_toLeftOf="@id/txtView_title_60min_time_bottomSheetReservedLayout"
+                app:layout_constraintRight_toRightOf="@id/txtView_title_60min_time_bottomSheetReservedLayout"
+                app:layout_constraintTop_toBottomOf="@id/txtView_title_60min_time_bottomSheetReservedLayout" />
+
+            <Button
+                android:id="@+id/btn_ok_bottomSheetReservedLayout"
+                style="@style/Button_Style_BG_Blue_Then_Whit"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_32_dp"
+                android:layout_marginLeft="@dimen/margin_8_dp"
+                android:layout_marginTop="@dimen/margin_4_dp"
+                android:layout_marginRight="@dimen/margin_4_dp"
+                android:text="تایید"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_4_dp"
+                app:layout_constraintTop_toBottomOf="@id/btn_ok_bottomSheetReservedLayout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_8_dp"
+        app:layout_constraintTop_toBottomOf="@id/cardView_bottomSheetReservedLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
